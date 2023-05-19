@@ -1,0 +1,340 @@
+/* 
+Project Name: Appointfly
+Author: Avi Debnath
+Discription: This is test bussiness website
+tags: business website, html template
+version: 1.0.1
+
+********Table Of content**********
+1. header top area
+2. header banner area
+3. hero area etc.
+*/
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+/*******Default css******/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+img{
+    max-width: 100%;
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: 600;
+    max-width: 68rem;
+    margin: auto;
+    line-height: 5.5rem;
+}
+h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+h4{
+    color: #EE3465;
+    font-weight: 600;
+}
+.btn a{
+    display: inline-block;
+    color: #18214D;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.section-title p{
+    color: #696969;
+    font-size: 1.7rem;
+    max-width: 60rem;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+/**********header top***********/
+.header-top-area{
+    padding: 5rem 0;
+    position: relative;
+}
+.logo{
+    max-width: 17rem;
+    max-height: 3.4rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .2s;
+}
+.menu ul li.active a,
+.menu ul li a:hover{
+    color: #345DEE;
+}
+.header-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-btn a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-left: 1.5rem;
+    padding: 10px 12px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.header-btn .active,
+.header-btn a:hover{
+    background: #345DEE;
+    color: #fff;
+}
+.header-btn .active:hover{
+    background: #294cca;
+}
+.menu-icon{
+	color: #345DEE !important;
+	border: 1px solid #345DEE;
+	padding: 4px 11px !important;
+	font-size: 22px!important;
+    display: none!important;
+}
+.menu-icon:hover{
+    color: #fff !important;
+}
+
+/* header banner */
+.header-banner-area{
+    padding: 3rem 0 9rem 0;
+}
+.banner-left h1{
+    font-size: 7rem;
+    color: #000000;
+    font-weight: 700;
+    max-width: 50rem;
+    margin-bottom: 1.5rem;
+}
+.banner-left > p{
+    color: #696969;
+    font-size: 2rem;
+    max-width: 550px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.subscribe-form form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 510px;
+}
+.subscribe-form form input[type="email"]{
+    background: #EFF2F6;
+    border: none;
+    outline: none;
+    flex-basis: calc(70% - 10px);
+    max-width: calc(70% - 10px);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+}
+.subscribe-form form input[type="email"]::placeholder{
+    opacity: 1;
+}
+.subscribe-form form input[type="submit"]{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: #345DEE;
+    padding: 1.2rem 0;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    border: none;
+    flex-basis: 30%;
+    max-width: 30%;
+}
+.subscribe-form form input[type="submit"]:hover{
+    background: #2749c7;
+}
+.subscribe-form p{
+    color: #696969;
+    margin-top: 2rem;
+}
+
+
+.banner-right{
+    text-align: right;
+}
+.banner-right img{
+    max-width: 70%;
+}
+
+/* ***********Passion Area**********  */
+.passion-area{
+    padding-bottom: 7rem;
+}
+.passion-single-row{
+    padding-bottom: 5rem;
+}
+.passion-content{
+    max-width: 43.5rem;
+}
+.passion-content h4{
+    margin-bottom: 1rem;
+}
+.passion-content h3{
+    margin-bottom: 1rem;
+}
+.passion-content p{
+    color: #696969;
+    font-size: 1.6rem;
+}
+.passion-image{
+    text-align: right;
+}
+.passion-image img{
+    max-width: 45rem;
+    max-height: 30.6rem;
+    object-fit: contain;
+}
+.passion-single-row:nth-child(odd) .passion-image{
+    text-align: left;
+}
+.passion-single-row:nth-child(odd) .passion-content{
+    float: right;
+}
+
+
+/**********Team Member***********/
+.team-member{
+    text-align: center;
+    border: 1px solid #DFE4EA;
+    padding: 20px;
+    border-radius: 5px;
+}
+.team-member-image{
+    width: 215px;
+    height: 215px;
+    margin: auto;
+}
+.team-member-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.see-more-btn{
+    display: block;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+
+/***contact****/
+.contact-slider{
+    max-width: 830px;
+    margin: 0 auto 5rem auto;
+}
+.contact-slider-image{
+    max-width: 135px;
+    margin: auto;
+}
+.contact-slider-image img{
+    width: 100%;
+}
+.contact-content h2{
+    color: #000000;
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 7rem;
+    max-width: 450px;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.contact-content p{
+    color: #696969;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 471px;
+}
+.contact-btn a{
+    display: inline-block;
+    color: #fff;
+    background: #345DEE;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.contact-btn a:hover{
+    background: #2349d3;
+}
+.contact-img{
+    width: 450px;
+}
+.contact-img img{
+    width: 100%;
+}
+
+
+.content-image{
+    text-align: right!important;
+}
+
+
+
+/* footer Area  */
+footer{
+    padding: 6rem 0;
+}
+.footer-links{
+    text-align: right;
+}
+.footer-links a i{
+    color: #000000;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+
+
+
+
+

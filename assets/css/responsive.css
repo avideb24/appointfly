@@ -1,0 +1,105 @@
+@media all and (max-width:991px){
+
+    .menu-icon{
+        display: block!important;
+    }
+    .menu-items{
+        display: none;
+        position: absolute;
+
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background: #345dee;
+    }
+    .menu-items .menu ul{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    .menu-items .menu ul li a{
+        color: #fff;
+        margin: 3px 0;
+    }
+    .menu-items .menu ul li.active a,
+    .menu-items .menu ul li a:hover{
+        color: #000!important;
+    }
+
+    /* banner */
+    .banner-right{
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .banner-right img {
+        max-width: 80%;
+    }
+
+    /* pasion area  */
+    .passion-image img{
+        max-width: 100%;
+        width: 90%;
+    }
+    
+
+    
+
+}
+
+@media all and (max-width:768px){
+
+    .passion-single-row:nth-child(odd){
+        flex-direction: column-reverse;
+     }
+
+}
+
+@media all and (max-width:570px){
+    .header-btn a{
+        display: none;
+    }
+    .menu-icon{
+        margin-right: 1rem;
+    }
+
+    /* banner  */
+    .banner-left h1{
+        font-size: 5rem;
+        max-width: 40rem;
+    }
+    .banner-left > p{
+        font-size: 1.6rem;
+    }
+    .subscribe-form form{
+        flex-direction: column;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+    .subscribe-form form input[type="email"]{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .subscribe-form form input[type="submit"]{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
